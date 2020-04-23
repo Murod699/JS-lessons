@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+
+       
+        
+        // Max topish funksiya
+        function maxx(my_array)
+        {
+            var max = my_array[0];
+            var len = my_array.length;
+            for(let i = 1; i<=len; i++){
+                if(max<my_array[i]){
+                 max = my_array[i];
+                }
+             }
+            return ('Massivning katta elementi:'+max);
+        }
+
+
+
+
+        // Min topish funksiya
+        function minn(array)
+        {
+            var min = a[0];
+            var len = array.length;
+            for(let i = 1; i<=len; i++){
+                if(min>array[i]){
+                 min = array[i];
+                }
+             }
+            return ('Massivning kichik elementi:'+min);
+        }
+       
+       
+
+
+
+       var n = prompt('Massiv elementlari sonini kiriting:', '');
+       var a = [];
+       for(var i=0; i<n; i++){
+           a[i] = prompt('Massiv elementini kiriting:','')
+       }
+        console.log(a);
+        console.log(maxx(a));
+        console.log(minn(a));
+    </script>
+</body>
+</html>
