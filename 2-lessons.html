@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var let and function</title>
+</head>
+<body>
+    <script>
+        var a = 8;
+        function myFunc()
+        {
+            a = 11;
+            console.log(a);
+        }
+        // myFunc();
+        // console.log(a);
+
+        let my_let = 21;
+
+        function myLet()
+        {
+            let my_let = 56;
+            console.log(my_let);
+        }
+        // myLet();
+
+        // console.log(my_let);
+
+        const g = 35;
+        // g = 21; bunday qilish xato yani o`zgartirish, BU O`ZGARMAS SON!
+        // console.log(g);
+
+        
+        function sayHello(name)
+        {
+            console.log('Hello '+name);
+        }
+        // console.log(sayHello('Murod'));
+
+        function multiply(a, b){
+            
+            var c = a * b;
+            console.log(c);
+        }
+        // console.log(multiply(3, 8));
+
+        function PrintArray(array_list){
+            var len = array_list.length;
+            for(var i = 0; i<len; i++){
+                console.log(array_list[i]);
+            }
+        }
+        // PrintArray([15, 69, 78, 45]);
+        var array = [
+            69,
+            74,
+            12,
+            32
+        ];
+        // PrintArray(array);
+
+        // sayHello('Odilbek');
+        // multiply(45, 32);
+
+        // alert('Hello World');
+
+        // var d = prompt('Savol beriladi javob olinadi');
+        // console.log(d);
+
+        // confirm funksiya true yoki false qaytaradi
+        // var e =  confirm('Saytga kirishga rozimisiz?');
+        // console.log(e); 
+
+        // Parser functions
+        var x = parseInt('65');  /* string tipni int tipga yani butun songa ozgartiradi! */
+        var y = parseFloat('14.9'); /* string tipni float tipga yani haqiqiy songa ozgartiradi! */
+    
+    </script>
+</body>
+</html>
