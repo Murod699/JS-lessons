@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <script>
+        // var a = prompt('Matnni kiriting:', '');
+        // // var a = 'Salom dunyo';
+        // var b = '';
+        // for(var i=a.length-1; i>=0; i--){
+        //     b += a[i];
+            
+        // }
+        // console.log('Kiritilgan matnni teskarisi:'+b);
+
+            function teskari(matn){
+                var len = matn.length;
+                var yangi = '';
+                for(var i=len-1; i>=0; i--){
+                    yangi += matn[i];
+                }
+                return 'Kiritilgan matnni teskarisi: '+yangi;
+            }
+        var a = prompt('Matnni kiriting:', '');
+        console.log(teskari(a));
+            
+    </script>
+</body>
+</html>
