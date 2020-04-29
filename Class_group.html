@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group class</title>
+</head>
+<body>
+    <script>
+        function Student(full_name, age, phone)
+        {
+           
+            this.name = full_name;
+            this.age = age;
+            this.phone = phone
+        }
+        function Group(name, students)
+        {
+            this.name = name;
+            this.students = students;
+
+            this.print = function(){
+            console.table(this.students);
+                }
+        }
+        var students = [
+            new Student('Bobur Rustamov', '21', '+998931112525'),
+            new Student('John Doe', '23', '+998931256985'),
+            new Student('Ma`murjon Yo`ldoshev', '22', '+998931112928'),
+            new Student('Shaxlo Salayeva', '18', '+998934563214')
+        ];
+        var group = new Group('943-18', students);
+        group.print();
+        console.log(group.name);
+        
+
+
+    </script>
+</body>
+</html>
